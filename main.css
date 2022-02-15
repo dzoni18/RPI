@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  padding: 2rem 0;
+  background: white;
+}
+
+input,
+button {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+}
+
+button,
+input[type="submit"] {
+  border: 0;
+  outline-style: none !important;
+  outline: none !important;
+  outline: 0 !important;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 84rem;
+  height: auto;
+  background: white;
+  margin: 0 auto;
+}
+
+.main-form {
+  max-width: 34.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.illustration {
+  margin-top: 5.4rem;
+  width: 19rem;
+  height: auto;
+}
+
+.illustration-password {
+  margin-top: 8.4rem;
+  width: 19rem;
+  height: auto;
+}
+
+.illustration-upgrade {
+  margin-top: 5.4rem;
+  width: 28.4rem;
+  height: auto;
+}
+
+.login {
+  font-size: 3.6rem;
+  font-weight: 700;
+  margin-top: 5.6rem;
+}
+
+.pass {
+  font-size: 3.6rem;
+  font-weight: 700;
+  margin-top: 3.8rem;
+}
+
+.upgrade {
+  font-size: 3.6rem;
+  font-weight: 700;
+  margin-top: 5.6rem;
+}
+
+label {
+  position: relative;
+}
+
+label .icon {
+  position: absolute;
+  display: inline-block;
+  width: 1.76rem;
+  height: 1.76rem;
+  margin-top: 1.8rem;
+  top: 50%;
+  left: 1.8rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  fill: #adadad;
+}
+
+label input {
+  padding-left: 4.8rem;
+  margin-top: 3.6rem;
+  height: 5rem;
+  width: 34.4rem;
+  font-size: 1.6rem;
+  color: #757575;
+  font-weight: 400;
+  outline-style: none !important;
+  outline: none !important;
+  outline: 0 !important;
+  border: 0.2rem solid #c2c2c2;
+  border-radius: 0.5rem;
+}
+
+label input:focus, label input:active {
+  border-color: #1a4e89;
+  color: #1a4e89;
+}
+
+label input:focus + .icon {
+  fill: #1a4e89;
+}
+
+label input#ccnum {
+  margin-top: 4.6rem;
+}
+
+label input#ccnum, label input#zip, label input#cvv {
+  padding-left: 1.8rem;
+}
+
+label input#zip {
+  margin-top: 0;
+}
+
+label input[name="cvv"] {
+  width: 16.5rem;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 3.6rem;
+  min-width: 100%;
+}
+
+.expiration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #c2c2c2;
+  width: 16.5rem;
+  height: 5rem;
+  border-radius: 0.5rem;
+  padding-left: 1.8rem;
+}
+
+.expiration input {
+  border: 0;
+  color: #757575;
+  outline-style: none !important;
+  outline: none !important;
+  outline: 0 !important;
+}
+
+.expiration input:focus {
+  color: #1a4e89;
+}
+
+.expiration span {
+  color: #757575;
+}
+
+#cvv {
+  padding: 0;
+  margin: 0;
+}
+
+.submit__button input,
+.pass__button input,
+.upgrade__button input {
+  text-transform: uppercase;
+  line-height: 2rem;
+  min-width: 34.4rem;
+  width: 34.4rem;
+  height: 5rem;
+  border: 0;
+  border-radius: 0.8rem;
+  background-color: #1a4e89;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.submit__button input:hover, .submit__button input:focus,
+.pass__button input:hover,
+.pass__button input:focus,
+.upgrade__button input:hover,
+.upgrade__button input:focus {
+  background-color: #01244b;
+}
+
+.upgrade__button input {
+  background-color: #c11543;
+  margin-top: 3.6rem;
+  margin-bottom: 14rem;
+}
+
+.upgrade__button input:hover, .upgrade__button input:focus {
+  background-color: #7a0021;
+}
+
+.pass__button input {
+  margin-top: 3.6rem;
+}
+
+.login-text,
+.pass-text {
+  color: #adadad;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 3.6rem;
+}
+
+.pass-text {
+  margin-top: 20rem;
+  padding-bottom: 8.6rem;
+}
+
+.pass-text a {
+  color: #1a4e89;
+  text-decoration: none;
+}
+
+.pass-text a:hover, .pass-text a:focus {
+  color: #adadad;
+}
+
+.upgrade-text {
+  color: #adadad;
+  text-align: center;
+}
+
+.forgot {
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  text-decoration: none;
+  color: #1a4e89;
+}
+
+.forgot:hover, .forgot:focus {
+  color: #adadad;
+}
+
+.whats-this {
+  color: #adadad;
+  font-size: 1.4rem;
+  text-decoration: none;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.whats-this:hover, .whats-this:focus {
+  color: #1a4e89;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 7.5rem;
+}
+
+.social .facebook,
+.social .google {
+  width: 16.5rem;
+  height: 4rem;
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-top: 0.5rem;
+}
+
+.social .facebook {
+  background-color: #395c8e;
+}
+
+.social .facebook:hover, .social .facebook:focus {
+  background-color: #0046a8;
+}
+
+.social .google {
+  background-color: #f14337;
+}
+
+.social .google:hover, .social .google:focus {
+  background-color: #a80000;
+}
