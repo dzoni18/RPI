@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upgrade Form</title>
+
+    <!-- main css -->
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Form -->
+        <form id="mainForm" class="main-form" action="#" method="post">
+            <h1 class="upgrade">Get Pro Account</h1>
+            <!-- img container -->
+            <div class="illustration-upgrade">
+                <img src="/img/Upgrade.svg" alt="">
+            </div>
+            <!-- img container END -->
+
+            <!-- e-mail -->
+            <label for="ccnum">
+                <input type="text" id="ccnum" name="cardnumber" placeholder="Card Number" required autofocus
+                    autocomplete="off">
+            </label>
+
+            <div class="row">
+                <!-- month / year -->
+
+                <div class="expiration">
+                  
+                        <input type="text" name="month" placeholder="MM" maxlength="2" size="2" />
+                    
+                    <span>/</span>
+                    
+                        <input type="text" name="year" placeholder="YY" maxlength="2" size="2" />
+                   
+                </div>
+
+                <!-- CVV -->
+                <label for="cvv">
+                    <input type="text" name="cvv" id="cvv" placeholder="CVV">
+                </label>
+            </div>
+
+            <a class="whats-this" href="https://www.cvvnumber.com/cvv.html" target="_blank">What's this?</a>
+
+
+            <label for="ccnum">
+                <input type="text" id="zip" name="zip" placeholder="ZIP/Postal code">
+            </label>
+
+            <div class="upgrade__button">
+                <input type="submit" value="Upgrade">
+            </div>
+        </form>
+        <!-- Main form END -->
+    </div>
+</body>
+
+</html>
