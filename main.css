@@ -78,22 +78,14 @@ img {
   height: auto;
 }
 
-.login {
-  font-size: 3.6rem;
-  font-weight: 700;
-  margin-top: 5.6rem;
-}
-
+.login,
+.upgrade,
 .pass {
   font-size: 3.6rem;
   font-weight: 700;
-  margin-top: 3.8rem;
-}
-
-.upgrade {
-  font-size: 3.6rem;
-  font-weight: 700;
   margin-top: 5.6rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 label {
@@ -126,6 +118,8 @@ label input {
   outline: 0 !important;
   border: 0.2rem solid #c2c2c2;
   border-radius: 0.5rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 label input:focus, label input:active {
@@ -181,6 +175,10 @@ label input[name="cvv"] {
   padding-left: 1.8rem;
 }
 
+.expiration:focus-within {
+  border-color: #1a4e89;
+}
+
 .expiration input {
   border: 0;
   color: #757575;
@@ -193,8 +191,10 @@ label input[name="cvv"] {
   color: #1a4e89;
 }
 
-.expiration span {
+.expiration span.slash {
   color: #757575;
+  padding-left: 0.2rem;
+  padding-right: 0.8rem;
 }
 
 #cvv {
@@ -203,8 +203,7 @@ label input[name="cvv"] {
 }
 
 .submit__button input,
-.pass__button input,
-.upgrade__button input {
+.pass__button input {
   text-transform: uppercase;
   line-height: 2rem;
   min-width: 34.4rem;
@@ -221,14 +220,23 @@ label input[name="cvv"] {
 
 .submit__button input:hover, .submit__button input:focus,
 .pass__button input:hover,
-.pass__button input:focus,
-.upgrade__button input:hover,
-.upgrade__button input:focus {
+.pass__button input:focus {
   background-color: #01244b;
 }
 
 .upgrade__button input {
+  text-transform: uppercase;
+  line-height: 2rem;
+  min-width: 34.4rem;
+  width: 34.4rem;
+  height: 5rem;
+  border: 0;
+  border-radius: 0.8rem;
   background-color: #c11543;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   margin-top: 3.6rem;
   margin-bottom: 14rem;
 }
@@ -301,9 +309,7 @@ label input[name="cvv"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  min-width: 100%;
+  width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -336,4 +342,51 @@ label input[name="cvv"] {
 
 .social .google:hover, .social .google:focus {
   background-color: #a80000;
+}
+
+@media screen and (max-width: 35rem) {
+  .main-form {
+    width: 30rem;
+  }
+  label {
+    position: relative;
+  }
+  label input {
+    width: 30rem;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .submit__button input,
+  .pass__button input,
+  .upgrade__button input {
+    min-width: 30rem;
+    width: 30rem;
+  }
+  #ccnum,
+  #zip {
+    width: 30rem;
+  }
+  .expiration,
+  #cvv {
+    width: 14.5rem;
+  }
+  .expiration .pass-text {
+    margin-top: 10rem;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .social {
+    width: 30rem;
+  }
+  .social .facebook,
+  .social .google {
+    width: 14.5rem;
+  }
+  .login,
+  .upgrade,
+  .pass {
+    font-size: 3.2rem;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
 }
